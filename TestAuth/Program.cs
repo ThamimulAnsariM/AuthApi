@@ -30,6 +30,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.MapGet("/", () => "Auth Management API is running!");
+
 app.MapControllers();
 
 app.Run();
